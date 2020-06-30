@@ -15,7 +15,7 @@
   "dependencies": {
     "@types/cron": "^1.7.2",
     "@types/node-fetch": "^2.5.7",
-    "ava": "^3.9.0",
+    "axios": "^0.19.2",
     "cron": "^1.8.2",
     "dotenv": "*",
     "load-json-file": "^6.2.0",

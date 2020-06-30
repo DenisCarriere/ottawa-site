@@ -6,7 +6,7 @@ const Markup = require('telegraf/markup')
 import load from "load-json-file"
 import write from "write-json-file"
 import fs from "fs"
-import fetch from "node-fetch"
+import axios from "axios"
 import crypto from 'crypto';
 
 // .env
@@ -34,8 +34,8 @@ bot.command('/start', ctx => {
 
 new CronJob("*/10 * * * * *", async () => {
   for ( const url of urls ) {
-    const response = await fetch(url);
-    const text = (await response.text()).replace(/\s/g, "")
+    const response = await axios.get(url);
+    const text = response.data.replace(/\s/g, "")
 
     // hashes
     const id = encode( url );
