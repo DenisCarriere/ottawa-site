@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "ottawa-site",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "@types/cron": "^1.7.2",
+    "@types/node-fetch": "^2.5.7",
+    "ava": "^3.9.0",
+    "cron": "^1.8.2",
+    "dotenv": "*",
+    "load-json-file": "^6.2.0",
+    "node-fetch": "^2.6.0",
+    "telegraf": "*",
+    "telegraf-command-parts": "*",
+    "write-json-file": "^4.3.0"
+  }
+}
